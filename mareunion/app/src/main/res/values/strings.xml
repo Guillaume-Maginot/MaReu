@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ma Réu</string>
+    <string name="title_item_detail">Réunion</string>
+    <string name="add_new_meeting">Add a new meeting</string>
+    /* --List Meeting Layout--> **/
+    <string name="text_first_line">Subject - StartDate - Start Time - Place</string>
+    <string name="text_second_line">GuestsList</string>
+    <string name="item_meeting_delete_description">Supprimer la réunion</string>
+    <string name="room_image_list_meetings_content_description">"Couleur salle de réunion""</string>
+</resources>
