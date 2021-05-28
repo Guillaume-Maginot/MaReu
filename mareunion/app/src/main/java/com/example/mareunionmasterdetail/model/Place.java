@@ -52,16 +52,16 @@ public class Place {
     @NonNull
     public static Place[] getAllPlaces() {
         return new Place[]{
-                new Place(1, "Timon"),
-                new Place(2, "Pumba"),
-                new Place(3, "Woody"),
-                new Place(4, "Buzz"),
-                new Place(5, "Elsa"),
-                new Place(6, "Anna"),
-                new Place(7, "Lilo"),
-                new Place(8, "Stitch"),
-                new Place(9, "Bob"),
-                new Place(10, "Belle")
+                new Place(1, "Rouge"),
+                new Place(2, "Vert"),
+                new Place(3, "Bleu"),
+                new Place(4, "Cyan"),
+                new Place(5, "Violet"),
+                new Place(6, "Marron"),
+                new Place(7, "Orange"),
+                new Place(8, "Jaune"),
+                new Place(9, "Rose"),
+                new Place(10, "Gris")
         };
     }
 
