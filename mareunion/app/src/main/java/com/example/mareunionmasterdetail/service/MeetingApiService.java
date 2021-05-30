@@ -14,10 +14,6 @@ public interface MeetingApiService {
      */
     List<Meeting> getMeetings();
 
-
-    /**
-     * Reset meeting List
-     */
     void resetMeetings();
 
     /**

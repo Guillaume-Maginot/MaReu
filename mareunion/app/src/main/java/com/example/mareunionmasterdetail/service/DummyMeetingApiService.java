@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DummyMeetingApiService implements MeetingApiService {
-    private List<Meeting> meetings = new ArrayList<>();
+
+    private List<Meeting> meetings = FakeMeetingGenerator.generateMeetings(); // récupère la liste des meetings
 
     @Override
     public List<Meeting> getMeetings() {
