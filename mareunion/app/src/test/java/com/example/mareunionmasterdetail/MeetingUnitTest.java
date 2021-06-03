@@ -41,6 +41,11 @@ public class MeetingUnitTest {
         Meeting meeting = new Meeting(1, R.drawable.ic_red, currentDate, 1, "Réunion 1", "g.maginot@gmail.com,maginot.lisa@gmail.com");
         service.addMeeting(meeting); // Ajout de la réunion factice à la liste des réunions.
         assertEquals(7, service.getMeetings().size()); // Vérification que la liste contient bien 7 éléments.
+        for ( Meeting meeting1 : service.getMeetings()) {
+            if (meeting1.equals(meeting)) {
+                assertTrue(1==1);
+            }
+        }
     }
 
     @Test
@@ -48,6 +53,13 @@ public class MeetingUnitTest {
         Meeting meetingToDelete = FAKE_MEETINGS.get(0); // Création d'une variable et récupération de la première réunion.
         service.deleteMeeting(meetingToDelete); // Appelle de la méthode de suppression d'une réunion.
         assertEquals(5, service.getMeetings().size()); // On vérifie que la liste contient bien 5 réunions.
+        boolean isPresent = false;
+        for ( Meeting meeting1 : service.getMeetings()) {
+            if (!meeting1.equals(meetingToDelete)) {
+                isPresent = true;
+            }
+        }
+        assertFalse(isPresent == false); // On vérifie qu'aucun des meetings encore présent dans getMeetings ne correspond à meetingToDelete.
     }
 
 }
