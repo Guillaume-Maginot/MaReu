@@ -31,6 +31,8 @@ public class ItemDetailActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
 
+
+       // Button to Add Meeting
         FloatingActionButton fab = findViewById(R.id.button_add_meeting);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,7 +66,7 @@ public class ItemDetailActivity extends AppCompatActivity {
             ItemDetailFragment fragment = new ItemDetailFragment();
             fragment.setArguments(arguments);
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.item_detail_container, fragment)
+                    .add(R.id., fragment)
                     .commit();
         }
     }
